@@ -3,7 +3,6 @@ import { valuesService } from "../Services/ValuesService.js";
 import { Pop } from "../Utils/Pop.js";
 import { setHTML } from "../Utils/Writer.js";
 
-
 //Private
 function _draw() {
   let cardsTemplate = ''
@@ -39,7 +38,7 @@ export class ValuesController {
       valuesService.removeValue(id)
     }
   }
-  
+
   async clearAll() {
     const yes = await Pop.confirm('Remove All Rolls?')
     if (yes) {
