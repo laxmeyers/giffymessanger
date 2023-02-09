@@ -23,6 +23,7 @@
           loading="lazy">
         <span class="ms-2">giffymessanger</span>
       </a>
+      <button class="btn btn-outline-light" data-bs-toggle="offcanvas" data-bs-target="#giftSubmit">Make Gift</button>
     </nav>
   </header>
   <main>
@@ -48,15 +49,15 @@
 
   <!-- STUB Off canvas -->
 
-  <div class="offcanvas offcanvas-start show" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop"
+  <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="giftSubmit"
     aria-labelledby="staticBackdropLabel">
     <div class="offcanvas-header">
       <h5 class="offcanvas-title" id="staticBackdropLabel">Wrap your gift</h5>
       <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
     </div>
     <div class="offcanvas-body">
-      <form class="text-center" onsubmit="">
-        <button class="btn btn-md btn-success">SEND IT</button>
+      <form class="text-center" onsubmit="app.giftsController.makeGift()">
+        <button class="btn btn-md btn-success" data-bs-dismiss="#giftSubmit" data-bs-toggle="offcanvas">SEND IT</button>
         <div class="py-2">
           <label for="tag">Write your message!!</label><br>
           <input class="w-100" type="text" id="tag" name="tag" max="120" min="3" required placeholder="You're amazing">
