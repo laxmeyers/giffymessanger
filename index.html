@@ -46,6 +46,29 @@
     </div>
   </footer>
 
+  <!-- STUB Off canvas -->
+
+  <div class="offcanvas offcanvas-start show" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop"
+    aria-labelledby="staticBackdropLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="staticBackdropLabel">Wrap your gift</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <form class="text-center" onsubmit="">
+        <button class="btn btn-md btn-success">SEND IT</button>
+        <div class="py-2">
+          <label for="tag">Write your message!!</label><br>
+          <input class="w-100" type="text" id="tag" name="tag" max="120" min="3" required placeholder="You're amazing">
+        </div>
+        <div class="py-2">
+          <label for="url">choose an image</label><br>
+          <input class="w-100" type="url" name="url" id="url" required placeholder="http://....">
+        </div>
+      </form>
+    </div>
+  </div>
+
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"
     integrity="sha512-odNmoc1XJy5x1TMVMdC7EMs3IVdItLPlCeL5vSUPN2llYKMJ2eByTTAIiiuqLg+GdNr9hF6z81p27DArRFKT7A=="

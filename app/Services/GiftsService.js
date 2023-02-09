@@ -8,6 +8,7 @@ class GiftsService {
         console.log(res.data);
         let newGift = res.data.map(g => new Gift(g))
         appState.gifts = newGift
+        console.log(appState.gifts)
     }
 }
 
