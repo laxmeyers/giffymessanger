@@ -11,7 +11,7 @@ export class Gift {
     get GifsTemplate() {
         if (!this.opened) {
             return `
-            <div class="col-12"  onclick="app.giftsController.openGift('${this.id}')">
+            <div class="col-4"  onclick="app.giftsController.openGift('${this.id}')">
               <div class="card my-2 selectable">
                 <img src="${this.url}" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -22,7 +22,7 @@ export class Gift {
             `
         } else {
             return `
-            <div class="col-12">
+            <div class="col-4">
               <div class="card my-2">
                 <img src="${this.url}" class="card-img-top" alt="${this.tag}">
                 <div class="card-body">
